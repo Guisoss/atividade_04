@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Saúde e Bem-estar</title>
+</head>
+<body>
+
+    <h1 align="center">Formulário de Saúde e Bem-estar</h1>
+
+    <font size="4">
+    <fieldset>
+        <legend> Informações pessoais: </legend>
+    <form action="formularioenviado.php" method="POST">
+<br><br>
+        <label> Nome: </label>
+        <input type="text" id="nome" name="nome" size="60" required>
+<br><br>
+        <label> Idade: </label>
+        <input type="text" id="idade" name="idade" maxlength="2" size="5" required>
+<br><br>
+        <label> Telefone(DDD): </label>
+        <input type="number" id="telefone" name="telefone" size="13" maxlength="11" required>
+<br><br>
+        <label> Gênero: </label>
+        <select id="genero" name="genero" required>
+            <option value="masculino"> Masculino </option>
+            <option value="feminino"> Feminino </option>
+            <option value="outro"> Outro </option>
+        </select><br>
+    </form>
+    </fieldset>
+
+<br><br>
+
+    <fieldset>
+        <legend> Hábitos alimentares: </legend><br>      
+        <input type="checkbox" id="alimentacao-saudavel" name="alimentacao" value="saudavel">
+        <label> Alimentação saudável </label><br>
+        <input type="checkbox" id="alimentacao-moderada" name="alimentacao" value="moderada">
+        <label> Alimentação moderada </label><br>
+        <input type="checkbox" id="alimentacao-ruim" name="alimentacao" value="ruim">
+        <label> Alimentação ruim </label><br>
+<br><br>
+
+<br>
+        <label> Nível de atividade física: </label><br>
+<br><br>
+        <input type="radio" id="sedentario" name="atividade-fisica" value="sedentario">
+        <label> Sedentário </label><br>
+        <input type="radio" id="atividade-leve" name="atividade-fisica" value="leve">
+        <label> Atividade leve </label><br>
+        <input type="radio" id="atividade-moderada" name="atividade-fisica" value="moderada">
+        <label> Atividade moderada </label><br>
+        <input type="radio" id="atividade-intensa" name="atividade-fisica" value="intensa">
+        <label> Atividade intensa </label><br>
+    </fieldset>
+<br><br>
+    <fieldset>
+        <legend> Histórico de doenças: </legend><br>
+        <textarea id="historico-doencas" name="historico-doencas" rows="4" cols="50"></textarea><br>
+
+    <th colspan="=2">
+        <input type="submit" id="enviar" name="enviar" value="Enviar"/>
+        <input type="reset" id="limpar" name="limpar" value="Limpar"/>
+    </th>
+
+    </fieldset>
+    </font>
+</form>
+
+</body>
+</html>
